@@ -50,3 +50,23 @@ This .NET-based mini-worker automates:
 
 5. **Run the Worker**
 ``dotnet run``
+
+---
+
+## TikTok App Information (Personal Use Only)
+This app has been registered with TikTok explicitly for personal use:
+
+**It does not collect, share, or store user data.**
+
+**It does not accept third-party access.**
+
+## Privacy and Security
+This app is private-use only, has minimal permissions, and explicitly avoids handling sensitive information beyond the necessary OAuth token provided by TikTok.
+
+## License
+This project is for personal use only. It is not licensed for commercial or third-party use.
+
+## Contact
+For inquiries or clarifications (personal use context), reach me at:
+
+GitHub Profile: olsavchenk
