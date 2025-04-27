@@ -38,17 +38,16 @@ This .NET-based mini-worker automates:
 ## Setup Instructions
 
 1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/yourusername/tiktok-uploader.git```
+``git clone https://github.com/yourusername/tiktok-uploader.git``
    
-2. **Restore Dependencies**
-```cd tiktok-uploader
-dotnet restore```
+3. **Restore Dependencies**
+``cd tiktok-uploader
+   dotnet restore``
 
-3. **Configure the Application Update the following in Worker.cs or through environment variables:**
-```string accessToken = "YOUR_ACCESS_TOKEN";
-string videoFilePath = "path/to/your/video.mp4";
-string videoDescription = "Your video caption here";```
+4. **Configure the Application Update the following in Worker.cs or through environment variables:**
+``string accessToken = "YOUR_ACCESS_TOKEN";
+   string videoFilePath = "path/to/your/video.mp4";
+   string videoDescription = "Your video caption here";``
 
-4. **Run the Worker**
-```dotnet run```
+5. **Run the Worker**
+``dotnet run``
