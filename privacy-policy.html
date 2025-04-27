@@ -1,49 +1,47 @@
 ﻿<!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Політика конфіденційності – MyTikTokUploader</title>
+    <title>Privacy Policy – Personal Uploader</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-        body {
-            font-family: system-ui,Arial,sans-serif;
-            max-width: 800px;
-            margin: 2rem auto;
-            line-height: 1.6;
-            padding: 0 1rem
-        }
-
-        h1, h2 {
-            color: #111
-        }
-
-        a {
-            color: #2563eb
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <h1>Політика конфіденційності</h1>
-    <p><em>Дата набуття чинності: 27 квітня 2025 р.</em></p>
+    <article class="doc">
+        <h1>Privacy Policy</h1>
+        <p class="date">Effective Date: 27 April 2025</p>
 
-    <h2>1. Яку інформацію ми збираємо</h2>
-    <p>
-        Сервіс <strong>MyTikTokUploader</strong> отримує лише <b>токен доступу TikTok</b>, необхідний для публікації відео від вашого імені. Жодні інші персональні
-        дані не зберігаються.
-    </p>
+        <h2>1&nbsp;•&nbsp;Information We Collect</h2>
+        <p>
+            <strong>Personal Uploader</strong> stores only the TikTok
+            <em>access&nbsp;token</em> and <em>refresh&nbsp;token</em> obtained via OAuth.
+            No other personal data is collected or persisted.
+        </p>
 
-    <h2>2. Як ми використовуємо інформацію</h2>
-    <ul>
-        <li>Ініціація завантаження відео через офіційний TikTok API</li>
-        <li>Перевірка статусу публікації</li>
-    </ul>
+        <h2>2&nbsp;•&nbsp;How We Use Information</h2>
+        <ul>
+            <li>To initiate video uploads via the TikTok Content Posting API.</li>
+            <li>To query processing status and report success or failure.</li>
+        </ul>
 
-    <h2>3. Зберігання й безпека</h2>
-    <p>Токени зберігаються зашифрованими у <abbr title="Azure Key Vault / AWS Secrets Manager тощо">сховищі секретів</abbr> та видаляються на ваш запит.</p>
+        <h2>3&nbsp;•&nbsp;Data Storage &amp; Security</h2>
+        <p>
+            Tokens are encrypted in a secure secrets store (e.g., Azure Key Vault) and
+            retained for a maximum of 30&nbsp;days, or deleted immediately upon your request.
+        </p>
 
-    <h2>4. Контактні дані</h2>
-    <p>Запитання? Напишіть на <a href="mailto:you@example.com">you@example.com</a>.</p>
+        <h2>4&nbsp;•&nbsp;Your Rights</h2>
+        <p>
+            You may request deletion of all stored data at any time by contacting the
+            email address below.
+        </p>
 
-    <p><a href="terms-of-service.html">→ Перейти до Умов використання</a></p>
+        <h2>5&nbsp;•&nbsp;Contact</h2>
+        <p>
+            Questions? Email us at <a href="super.sobac@gmail.com">super.sobac@gmail.com</a>.
+        </p>
+
+        <p class="nav"><a href="terms-of-service.html">View Terms of Service →</a></p>
+    </article>
 </body>
 </html>

@@ -1,11 +1,129 @@
 ﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Personal Uploader – Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        /* ---------- Base styles ---------- */
+        :root {
+            --brand: #3b82f6;
+            --brand-dark: #1d4ed8;
+            --bg: #f9fafb;
+            --fg: #111827;
+            --radius: 12px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--fg);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        a {
+            color: var(--brand);
+            text-decoration: none;
+        }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+        /* ---------- Layout ---------- */
+        header {
+            background: var(--brand);
+            color: #fff;
+            padding: 1rem 1.25rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: #fff;
+            margin-left: 1rem;
+            font-weight: 500;
+        }
+
+        main {
+            flex: 1;
+            max-width: 860px;
+            margin: 2.5rem auto;
+            padding: 0 1rem;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: var(--radius);
+            padding: 2rem;
+            box-shadow: 0 4px 14px rgba(0,0,0,.07);
+            animation: fadeIn .6s ease-out;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            font-size: 0.875rem;
+            color: #6b7280;
+        }
+        /* ---------- Animations ---------- */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(8px);
+            }
+
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to my app.</h1>
+    <header>
+        <h1>Personal Uploader</h1>
+        <nav>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-of-service.html">Terms of Service</a>
+            <a href="https://github.com/olsavchenk/TikTokWorker" target="_blank">GitHub Repo</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2 style="margin-bottom:1rem;">Automated TikTok Posting—Made Easy</h2>
+            <p>
+                <strong>Personal Uploader</strong> is a lightweight .NET worker that uploads videos to your TikTok
+                account through the official Content Posting API. It’s designed for solo-creators who want a
+                clean CI/CD-style workflow: render → push → TikTok.
+            </p>
+            <hr style="margin:2rem 0;">
+            <h3>How it works</h3>
+            <ol>
+                <li>Render or export a video file.</li>
+                <li>Commit &amp; push to GitHub (or drop into S3).</li>
+                <li>Personal Uploader detects the new asset and calls TikTok’s API.</li>
+                <li>The video appears in TikTok as <em>Private</em> (unless your app is fully audited).</li>
+            </ol>
+            <p style="margin-top:1.5rem;">
+                Need details? See <a href="https://developers.tiktok.com/doc/content-posting-api/">TikTok docs</a>.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        © 2025 Personal Uploader · <a href="mailto:super.sobac@gmail.com">super.sobac@gmail.com</a>
+    </footer>
 </body>
 </html>
