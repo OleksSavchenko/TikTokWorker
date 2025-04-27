@@ -18,15 +18,14 @@ This .NET-based mini-worker automates:
 ---
 
 ## Technologies Used
-- .NET Worker Service (.NET 8+)
-- RestSharp (for API requests)
+- .NET Worker Service (.NET 9)
 - Newtonsoft.Json (JSON handling)
 - TikTok Official API (Content Posting API v2)
 
 ---
 
 ## Requirements
-- **.NET 8 SDK** or newer ([Download .NET](https://dotnet.microsoft.com/download))
+- **.NET 9 SDK** or newer ([Download .NET](https://dotnet.microsoft.com/download))
 - **TikTok App Credentials**:
   - Client ID
   - Client Secret
